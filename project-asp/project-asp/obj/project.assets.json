@@ -563,11 +563,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\GitHUB\\React-Practices\\proyect-asp\\proyect-asp\\proyect-asp.csproj",
-      "projectName": "proyect-asp",
-      "projectPath": "E:\\GitHUB\\React-Practices\\proyect-asp\\proyect-asp\\proyect-asp.csproj",
+      "projectUniqueName": "E:\\GitHUB\\React-Practices\\project-asp\\project-asp\\project-asp.csproj",
+      "projectName": "project-asp",
+      "projectPath": "E:\\GitHUB\\React-Practices\\project-asp\\project-asp\\project-asp.csproj",
       "packagesPath": "C:\\Users\\Belse\\.nuget\\packages\\",
-      "outputPath": "E:\\GitHUB\\React-Practices\\proyect-asp\\proyect-asp\\obj\\",
+      "outputPath": "E:\\GitHUB\\React-Practices\\project-asp\\project-asp\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
