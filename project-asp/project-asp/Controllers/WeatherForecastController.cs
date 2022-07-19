@@ -34,6 +34,7 @@ namespace proyect_asp.Controllers
                 Summary = Summaries[rng.Next(Summaries.Length)]
             })
             .ToArray();
+           
         }
     }
 }
