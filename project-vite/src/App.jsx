@@ -1,33 +1,46 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import './App.css'
+import { useState } from 'react';
+import bmxImg from '..//public/bmx.png';
+import reactLogo from './assets/react.svg';
+import './App.css';
+import Card from './Components/Card';
+
+const person = {
+  Nombre: 'Berselis J. Mendoza M.',
+  Edad: 35,
+  DeporteFav: 'BMX Street',
+  PasaTiempo: 'Explorar ligres nuevos'
+};
+const hobbies = {
+  title:"Hobbies",
+  list:['Montar Bmx', 'Compartir con la familia', 'Ir a excursiones', 'Jugar al PS4']
+};
+
+const skill = {
+  title:"Skills",
+  list:['HTML/CSS', 'JavaScript', 'C# ASP.NET', 'SQL Server']
+};
 
 function App() {
-  const [count, setCount] = useState(0)
+  //const [count, setCount] = useState(0);
+
+  let { Nombre, Edad, DeporteFav, PasaTiempo } = person;
 
   return (
-    <div className="App">
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src="/vite.svg" className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://reactjs.org" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+    <>
+      <div className="App">
+        <img src={bmxImg} className="bmx" alt="bmx imagen" />
+        <h2> <strong>Nombre: </strong> <small> {Nombre}</small></h2>
+        <h2> <strong>Edad: </strong> <small> {Edad} años</small></h2>
+        <h2> <strong>Deporte Fav: </strong> <small> {DeporteFav}</small></h2>
+        <h2> <strong>Pasatiempo: </strong> <small> {PasaTiempo}</small></h2>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </div>
+
+      <Card objInfo={hobbies}/>
+      
+      <Card objInfo={skill}/>
+
+      
+    </>
   )
 }
 

@@ -39,3 +39,37 @@
 .read-the-docs {
   color: #888;
 }
+
+
+.bmx{
+  max-width: 128px;
+  cursor: pointer;
+  -webkit-transition: all .4s ease;
+}
+
+.bmx:hover{
+  transform: translateY(15px);
+}
+
+
+.App{
+  border: solid 1px #646464;
+  padding: 3vw;
+  border-radius: 25px;
+  transition: all .4s ease;
+  -webkit-transition: all .4s ease;
+  margin:10px;
+}
+
+
+.App:hover{
+  border-color: #a37623;
+  box-shadow:inset 0px 5px 5px 0px #133f05fc, inset 0px 0px 20px 0px #0c3804;
+  transition: all .4s ease;
+  -webkit-transition: all .4s ease;
+}
+
+ul{
+  list-style: none;
+  padding: 0;
+}
