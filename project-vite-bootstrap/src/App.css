@@ -1,0 +1,65 @@
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.navbar-brand {
+  pointer-events: none;
+  display: flex;
+  align-items: center;
+}
+
+.react-logo {
+  margin-right: 1vw;
+  animation: App-logo-spin infinite 5s linear;
+}
+
+.bdevelopment-logo {
+  max-width: 96px;
+}
+.counter-practice-one{
+  text-align: center;
+  margin:1vw;
+  font-size: 74px;;
+}
+
+.btn-practice-once {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border-radius: 0.375rem;
+  transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.layout-center{
+  padding-top:1vw;
+}
+
+.red {
+  color: #dc3545;
+}
+
+.green{
+  color:#198754;
+}
+
+.neutral{
+  color:#212529;
+}

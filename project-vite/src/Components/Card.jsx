@@ -2,10 +2,10 @@
 
 import React from 'react';
 
-const Card = ({objInfo}) => {
+const Card = ({objInfo, color}) => {
     const {title, list} = objInfo;
     return (
-        <div className="App">
+        <div className={`App ${color}`}>
             <h2><strong>{title}</strong></h2>
             <ul>
                 <li>{list[0]}</li>
