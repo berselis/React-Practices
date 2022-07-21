@@ -32,8 +32,12 @@
   }
 }
 
+#root{
+  display: grid;
+  gap: 2vw;
+}
 .card {
-  padding: 2em;
+  padding: 1em;
 }
 
 .read-the-docs {
@@ -45,6 +49,7 @@
   max-width: 128px;
   cursor: pointer;
   -webkit-transition: all .4s ease;
+  margin: auto;
 }
 
 .bmx:hover{
@@ -58,7 +63,7 @@
   border-radius: 25px;
   transition: all .4s ease;
   -webkit-transition: all .4s ease;
-  margin:10px;
+  
 }
 
 
@@ -72,4 +77,30 @@
 ul{
   list-style: none;
   padding: 0;
+}
+ul > li:hover{
+  cursor: pointer;
+  transition: all .3s ease;
+  -webkit-transition: all .3s ease;
+}
+ul > li:hover{
+  transform: translateY(-1px);
+  color: #111010;
+  transition: all .3s ease;
+  -webkit-transition: all .3s ease;
+}
+.img-exercise{
+  width: 100%;
+}
+
+@media(max-width: 480px){
+  #root{
+    grid-template-columns: auto;
+  }
+}
+
+@media(min-width: 481px) and (max-width: 768){
+  #root{
+    grid-template-columns: auto auto auto;
+  }
 }

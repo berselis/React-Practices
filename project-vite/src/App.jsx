@@ -1,8 +1,10 @@
 import { useState } from 'react';
 import bmxImg from '..//public/bmx.png';
+import exerciseImg from '..//public/exerciselogic1.png';
 import reactLogo from './assets/react.svg';
 import './App.css';
 import Card from './Components/Card';
+import Logic1 from './Components/Logic1';
 
 const person = {
   Nombre: 'Berselis J. Mendoza M.',
@@ -20,6 +22,11 @@ const skill = {
   list:['HTML/CSS', 'JavaScript', 'C# ASP.NET', 'SQL Server']
 };
 
+const exercise = {
+  UrlImg:exerciseImg,
+  Result: 0
+}
+
 function App() {
   //const [count, setCount] = useState(0);
 
@@ -29,19 +36,28 @@ function App() {
     <>
       <div className="App">
         <img src={bmxImg} className="bmx" alt="bmx imagen" />
-        <h2> <strong>Nombre: </strong> <small> {Nombre}</small></h2>
-        <h2> <strong>Edad: </strong> <small> {Edad} años</small></h2>
-        <h2> <strong>Deporte Fav: </strong> <small> {DeporteFav}</small></h2>
-        <h2> <strong>Pasatiempo: </strong> <small> {PasaTiempo}</small></h2>
+        <h2> <strong>Nombre: </strong> <br/><small> {Nombre}</small></h2>
+        <h2> <strong>Edad: </strong> <br/><small> {Edad} años</small></h2>
+        <h2> <strong>Deporte Fav: </strong> <br/><small> {DeporteFav}</small></h2>
+        <h2> <strong>Pasatiempo: </strong> <br/><small> {PasaTiempo}</small></h2>
       </div>
 
       <Card objInfo={hobbies}/>
       
-      <Card objInfo={skill}/>
+      <Card objInfo={skill}/>  
 
-      
+      <Logic1 objData={FindSumFromData(1000)}/>
     </>
   )
 }
 
 export default App
+
+function FindSumFromData(number = 10, a = 3, b = 5){
+  for(let i = 1; i < number; i++){
+    if(i % a == 0 || i % b == 0){
+      exercise.Result += i;
+    }
+  }
+  return exercise;
+}

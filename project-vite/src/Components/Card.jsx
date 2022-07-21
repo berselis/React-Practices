@@ -3,7 +3,6 @@
 import React from 'react';
 
 const Card = ({objInfo}) => {
-    console.log(objInfo);
     const {title, list} = objInfo;
     return (
         <div className="App">
