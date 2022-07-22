@@ -5,6 +5,7 @@ import bootstrapLogo from './assets/bootstrap-logo-shadow.png';
 import './App.css';
 import PracticeOne from './Components/PracticeOne';
 import Morallogic from './Components/Morallogic';
+import LightButtom from './Components/LightButtom';
 
 
 function App() {
@@ -17,15 +18,17 @@ function App() {
             <img src={bootstrapLogo} alt="" className="d-inline-block align-text-top bootstrap-logo" />
             <h3><strong>React Practices</strong> - BJMM</h3>
           </a>
-          <img src={bdevelopmentLogo} alt="BJMM" className='bdevelopment-logo'/>
+          <img src={bdevelopmentLogo} alt="BJMM" className='bdevelopment-logo' />
         </div>
       </nav>
       <div className='container '>
         <div className='row layout-center'>
           <PracticeOne />
-
-          <Morallogic/>
-
+          <Morallogic />
+          <LightButtom />
+          <LightButtom />
+          <LightButtom />
+          <LightButtom />
         </div>
       </div>
     </>

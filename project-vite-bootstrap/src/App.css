@@ -72,3 +72,20 @@
 .neutral{
   color:#212529;
 }
+
+.OFF{
+  background:#aba7a7;
+}
+
+.ON{
+  background:yellow;
+}
+
+.light-circle{
+  width: 14vw;
+  height: 14vw;
+  border: solid 1px #646464;
+  border-radius: 50%;
+  margin: auto;
+
+}
