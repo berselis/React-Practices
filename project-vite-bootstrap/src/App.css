@@ -8,6 +8,10 @@
   }
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
 .navbar-brand {
   pointer-events: none;
   display: flex;
@@ -88,4 +92,35 @@
   border-radius: 50%;
   margin: auto;
 
+}
+
+.hide{
+  display: none;
+}
+
+.div-password{
+  position: relative;
+}
+
+.div-password > i{
+  position: absolute;
+  font-size: 32px;
+  right: 20px;
+  top:-5px;
+  cursor: pointer;
+  opacity: .4;
+  transition: opacity .500s  ease;
+  transition:display .500s ease;
+}
+
+.div-password > i:hover{
+  opacity: 1;
+  transition: opacity .500s  ease;
+  transition:display .500s ease;
+}
+
+.footer{
+  margin: 20vh 0 0 0;
+  width: 100%;
+  height: 5vh;
 }

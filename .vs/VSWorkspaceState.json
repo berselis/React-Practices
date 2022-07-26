@@ -1,6 +1,10 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\project-vite-bootstrap",
+    "\\project-vite-bootstrap\\src",
+    "\\project-vite-bootstrap\\src\\Components"
   ],
+  "SelectedNode": "\\project-vite-bootstrap\\src\\Components\\PracticeOne.jsx",
   "PreviewInSolutionExplorer": false
 }
