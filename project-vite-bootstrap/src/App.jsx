@@ -9,6 +9,9 @@ import Fibonachi from './Components/Fibonachi';
 import ShowHidePass from './Components/ShowHidePass';
 import RandomColor from './Components/RandomColor';
 import FibonacciEvenValue from './Components/FibonacciEvenValue';
+import Countries from './Components/Countries';
+import Form from './Components/Form';
+import CarApiAcademlo from './Components/CarApiAcademlo';
 
 
 function App() {
@@ -36,6 +39,8 @@ function App() {
           <ShowHidePass/>
           <RandomColor/>
           <FibonacciEvenValue/>
+          <Form/>
+          <CarApiAcademlo/>
 
 
 
